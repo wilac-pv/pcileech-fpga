@@ -1,0 +1,1038 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Mon Dec  9 20:29:49 2024
+# Process ID         : 14168
+# Current directory  : D:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.runs/pcie_7x_0_synth_1
+# Command line       : vivado.exe -log pcie_7x_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source pcie_7x_0.tcl
+# Log file           : D:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.runs/pcie_7x_0_synth_1/pcie_7x_0.vds
+# Journal file       : D:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.runs/pcie_7x_0_synth_1\vivado.jou
+# Running On         : SecHex-FR54PQQ
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 22000
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i5-13600KF
+# CPU Frequency      : 3494 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 20
+# Host memory        : 34162 MB
+# Swap memory        : 34359 MB
+# Total Virtual      : 68522 MB
+# Available Virtual  : 49931 MB
+#-----------------------------------------------------------
+source pcie_7x_0.tcl -notrace
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: pcie_7x_0
+Command: synth_design -top pcie_7x_0 -part xc7a35tfgg484-2 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tfgg484-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 24100
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1038.688 ; gain = 466.738
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0' [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/synth/pcie_7x_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_pcie2_top' [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pcie2_top.v:59]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_core_top' [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_core_top.v:63]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [D:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (0#1) [D:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_pcie_top' [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pcie_top.v:62]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_axi_basic_top' [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_axi_basic_top.v:68]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_axi_basic_rx' [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_axi_basic_rx.v:70]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_axi_basic_rx_pipeline' [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_axi_basic_rx_pipeline.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_axi_basic_rx_pipeline' (0#1) [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_axi_basic_rx_pipeline.v:70]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_axi_basic_rx_null_gen' [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_axi_basic_rx_null_gen.v:71]
+INFO: [Synth 8-226] default block is never used [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_axi_basic_rx_null_gen.v:253]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_axi_basic_rx_null_gen' (0#1) [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_axi_basic_rx_null_gen.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_axi_basic_rx' (0#1) [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_axi_basic_rx.v:70]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_axi_basic_tx' [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_axi_basic_tx.v:70]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_axi_basic_tx_thrtl_ctl' [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_axi_basic_tx_thrtl_ctl.v:71]
+INFO: [Synth 8-226] default block is never used [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_axi_basic_tx_thrtl_ctl.v:573]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_axi_basic_tx_thrtl_ctl' (0#1) [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_axi_basic_tx_thrtl_ctl.v:71]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_axi_basic_tx_pipeline' [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_axi_basic_tx_pipeline.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_axi_basic_tx_pipeline' (0#1) [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_axi_basic_tx_pipeline.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_axi_basic_tx' (0#1) [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_axi_basic_tx.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_axi_basic_top' (0#1) [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_axi_basic_top.v:68]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_pcie_7x' [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pcie_7x.v:63]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_pcie_bram_top_7x' [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pcie_bram_top_7x.v:72]
+WARNING: [Synth 8-11581] system function call 'time' not supported [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pcie_bram_top_7x.v:139]
+INFO: [Synth 8-251] [1'b0]  ROWS_TX 1 COLS_TX 4 [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pcie_bram_top_7x.v:139]
+WARNING: [Synth 8-11581] system function call 'time' not supported [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pcie_bram_top_7x.v:140]
+INFO: [Synth 8-251] [1'b0]  ROWS_RX 1 COLS_RX 4 [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pcie_bram_top_7x.v:140]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_pcie_brams_7x' [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pcie_brams_7x.v:65]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_pcie_bram_7x' [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pcie_bram_7x.v:63]
+INFO: [Synth 8-6157] synthesizing module 'xil_internal_svlib_BRAM_TDP_MACRO' [D:/Xilinx/Vivado/2024.2/data/verilog/src/unimacro/BRAM_TDP_MACRO.v:30]
+INFO: [Synth 8-6157] synthesizing module 'RAMB36E1' [D:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:143634]
+INFO: [Synth 8-6155] done synthesizing module 'RAMB36E1' (0#1) [D:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:143634]
+INFO: [Synth 8-6155] done synthesizing module 'xil_internal_svlib_BRAM_TDP_MACRO' (0#1) [D:/Xilinx/Vivado/2024.2/data/verilog/src/unimacro/BRAM_TDP_MACRO.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_pcie_bram_7x' (0#1) [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pcie_bram_7x.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_pcie_brams_7x' (0#1) [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pcie_brams_7x.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_pcie_bram_top_7x' (0#1) [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pcie_bram_top_7x.v:72]
+INFO: [Synth 8-6157] synthesizing module 'PCIE_2_1' [D:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:113046]
+INFO: [Synth 8-6155] done synthesizing module 'PCIE_2_1' (0#1) [D:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:113046]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_pcie_7x' (0#1) [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pcie_7x.v:63]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_pcie_pipe_pipeline' [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pcie_pipe_pipeline.v:63]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_pcie_pipe_misc' [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pcie_pipe_misc.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_pcie_pipe_misc' (0#1) [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pcie_pipe_misc.v:63]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_pcie_pipe_lane' [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pcie_pipe_lane.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_pcie_pipe_lane' (0#1) [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pcie_pipe_lane.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_pcie_pipe_pipeline' (0#1) [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pcie_pipe_pipeline.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_pcie_top' (0#1) [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pcie_top.v:62]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_gt_top' [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_gt_top.v:62]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_gt_rx_valid_filter_7x' [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_gt_rx_valid_filter_7x.v:62]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_gt_rx_valid_filter_7x.v:191]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_gt_rx_valid_filter_7x' (0#1) [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_gt_rx_valid_filter_7x.v:62]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_pipe_wrapper' [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pipe_wrapper.v:156]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_pipe_clock' [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pipe_clock.v:67]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [D:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:2676]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [D:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:2676]
+INFO: [Synth 8-6157] synthesizing module 'BUFGCTRL' [D:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:2738]
+INFO: [Synth 8-6155] done synthesizing module 'BUFGCTRL' (0#1) [D:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:2738]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [D:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:84588]
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (0#1) [D:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:84588]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_pipe_clock' (0#1) [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pipe_clock.v:67]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_gtp_pipe_reset' [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_gtp_pipe_reset.v:67]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_gtp_pipe_reset' (0#1) [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_gtp_pipe_reset.v:67]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_qpll_reset' [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_qpll_reset.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_qpll_reset' (0#1) [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_qpll_reset.v:66]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_gtp_pipe_rate' [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_gtp_pipe_rate.v:67]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_gtp_pipe_rate' (0#1) [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_gtp_pipe_rate.v:67]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_gtp_pipe_drp' [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_gtp_pipe_drp.v:67]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_gtp_pipe_drp' (0#1) [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_gtp_pipe_drp.v:67]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_pipe_eq' [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pipe_eq.v:67]
+INFO: [Synth 8-226] default block is never used [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pipe_eq.v:402]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_rxeq_scan' [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_rxeq_scan.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_rxeq_scan' (0#1) [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_rxeq_scan.v:66]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_pipe_eq' (0#1) [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pipe_eq.v:67]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_gt_common' [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_gt_common.v:56]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_qpll_drp' [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_qpll_drp.v:67]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_qpll_drp' (0#1) [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_qpll_drp.v:67]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_qpll_wrapper' [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_qpll_wrapper.v:67]
+INFO: [Synth 8-6157] synthesizing module 'GTPE2_COMMON' [D:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:53077]
+INFO: [Synth 8-6155] done synthesizing module 'GTPE2_COMMON' (0#1) [D:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:53077]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_gtp_cpllpd_ovrd' [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_gtp_cpllpd_ovrd.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_gtp_cpllpd_ovrd' (0#1) [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_gtp_cpllpd_ovrd.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_qpll_wrapper' (0#1) [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_qpll_wrapper.v:67]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_gt_common' (0#1) [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_gt_common.v:56]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_pipe_user' [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pipe_user.v:67]
+INFO: [Synth 8-226] default block is never used [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pipe_user.v:354]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_pipe_user' (0#1) [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pipe_user.v:67]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_pipe_sync' [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pipe_sync.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_pipe_sync' (0#1) [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pipe_sync.v:72]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_gt_wrapper' [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_gt_wrapper.v:67]
+INFO: [Synth 8-6157] synthesizing module 'GTPE2_CHANNEL' [D:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:52375]
+INFO: [Synth 8-6155] done synthesizing module 'GTPE2_CHANNEL' (0#1) [D:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:52375]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_gtx_cpllpd_ovrd' [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_gtx_cpllpd_ovrd.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_gtx_cpllpd_ovrd' (0#1) [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_gtx_cpllpd_ovrd.v:55]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_gt_wrapper' (0#1) [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_gt_wrapper.v:67]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_pipe_wrapper' (0#1) [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pipe_wrapper.v:156]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_gt_top' (0#1) [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_gt_top.v:62]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_core_top.v:2230]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_debug_wrapper' [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_debug_wrapper.v:58]
+WARNING: [Synth 8-6896] force is inside initial block, initial block items will be ignored [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_debug_wrapper.v:267]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_debug_probes' [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_debug_probes.v:58]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_dpdistram' [D:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8239]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [D:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-2] MEMORY_INIT_FILE (none), MEMORY_INIT_PARAM together specify no memory initialization. Initial memory contents will be all 0's.   [D:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:516]
+WARNING: [Synth 8-6060] Synth Warning: [XPM_MEMORY 30-15] MEMORY_TYPE (2) and MEMORY_PRIMITIVE (1) together specify a true dual port distributed RAM, which will be mapped to a dual port RAM structure using port A and B read interfaces but a single port A write interface, leaving the port B write interface unused.   [D:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:553]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (0#1) [D:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_dpdistram' (0#1) [D:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8239]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_dpdistram__parameterized0' [D:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8239]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized0' [D:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-2] MEMORY_INIT_FILE (none), MEMORY_INIT_PARAM together specify no memory initialization. Initial memory contents will be all 0's.   [D:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:516]
+WARNING: [Synth 8-6060] Synth Warning: [XPM_MEMORY 30-15] MEMORY_TYPE (2) and MEMORY_PRIMITIVE (1) together specify a true dual port distributed RAM, which will be mapped to a dual port RAM structure using port A and B read interfaces but a single port A write interface, leaving the port B write interface unused.   [D:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:553]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized0' (0#1) [D:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_dpdistram__parameterized0' (0#1) [D:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8239]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram' [D:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8556]
+INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized1' [D:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6059] Synth Info: [XPM_MEMORY 20-2] MEMORY_INIT_FILE (none), MEMORY_INIT_PARAM together specify no memory initialization. Initial memory contents will be all 0's.   [D:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:516]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized1' (0#1) [D:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:54]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram' (0#1) [D:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8556]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_array_single' [D:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_array_single' (0#1) [D:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_array_single__parameterized0' [D:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_array_single__parameterized0' (0#1) [D:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_debug_probes.v:515]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_debug_probes.v:531]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_debug_probes.v:526]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_debug_probes' (0#1) [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_debug_probes.v:58]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_debug_axi4l_s' [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_debug_axi4l_s.v:59]
+INFO: [Synth 8-155] case statement is not full and has no default [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_debug_axi4l_s.v:133]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_debug_axi4l_s' (0#1) [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_debug_axi4l_s.v:59]
+INFO: [Synth 8-6157] synthesizing module 'pcie_7x_0_jtag' [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/ip_0/synth/pcie_7x_0_jtag.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray' [D:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray' (0#1) [D:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized2' [D:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized2' (0#1) [D:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+WARNING: [Synth 8-7071] port 'sl_iport0' of module 'jtag_axi_v1_2_20_jtag_axi' is unconnected for instance 'inst' [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/ip_0/synth/pcie_7x_0_jtag.v:140]
+WARNING: [Synth 8-7071] port 'sl_oport0' of module 'jtag_axi_v1_2_20_jtag_axi' is unconnected for instance 'inst' [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/ip_0/synth/pcie_7x_0_jtag.v:140]
+WARNING: [Synth 8-7023] instance 'inst' of module 'jtag_axi_v1_2_20_jtag_axi' has 41 connections declared, but only 39 given [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/ip_0/synth/pcie_7x_0_jtag.v:140]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_jtag' (0#1) [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/ip_0/synth/pcie_7x_0_jtag.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_debug_wrapper' (0#1) [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_debug_wrapper.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_core_top' (0#1) [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_core_top.v:63]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0_pcie2_top' (0#1) [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pcie2_top.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'pcie_7x_0' (0#1) [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/synth/pcie_7x_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element trn_rdllp_src_rdy_d_reg was removed.  [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_axi_basic_tx_thrtl_ctl.v:421]
+WARNING: [Synth 8-6014] Unused sequential element reg_tlast_reg was removed.  [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_axi_basic_tx_thrtl_ctl.v:655]
+WARNING: [Synth 8-6014] Unused sequential element flush_axi_reg was removed.  [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_axi_basic_tx_pipeline.v:528]
+WARNING: [Synth 8-6014] Unused sequential element reg_eios_detected_reg was removed.  [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_gt_rx_valid_filter_7x.v:135]
+WARNING: [Synth 8-6014] Unused sequential element gt_rx_is_skp0_q_reg was removed.  [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_gt_rx_valid_filter_7x.v:144]
+WARNING: [Synth 8-6014] Unused sequential element gt_rx_is_skp1_q_reg was removed.  [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_gt_rx_valid_filter_7x.v:145]
+WARNING: [Synth 8-6014] Unused sequential element pclk_sel_slave_reg was removed.  [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pipe_clock.v:590]
+WARNING: [Synth 8-6014] Unused sequential element gen3_rdy_reg was removed.  [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pipe_user.v:562]
+WARNING: [Synth 8-6014] Unused sequential element rxsync_fsm_disable.rxsync_done_reg was removed.  [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pipe_sync.v:613]
+WARNING: [Synth 8-6014] Unused sequential element pipe_lane[0].gt_rxrcvrdet_c_reg was removed.  [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_pipe_wrapper.v:1660]
+WARNING: [Synth 8-6014] Unused sequential element gen_rd_a.gen_douta_pipe.ena_pipe_reg[0] was removed.  [D:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:2387]
+WARNING: [Synth 8-6014] Unused sequential element gen_rd_b.gen_doutb_pipe.enb_pipe_reg[0] was removed.  [D:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:3077]
+WARNING: [Synth 8-6014] Unused sequential element gen_rd_a.gen_douta_pipe.ena_pipe_reg[0] was removed.  [D:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:2387]
+WARNING: [Synth 8-6014] Unused sequential element gen_rd_b.gen_doutb_pipe.enb_pipe_reg[0] was removed.  [D:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:3077]
+WARNING: [Synth 8-6014] Unused sequential element gen_rd_b.gen_doutb_pipe.enb_pipe_reg[0] was removed.  [D:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:3077]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'ltssm_trace_mem_inst'. This will prevent further optimization [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_debug_probes.v:317]
+WARNING: [Synth 8-6014] Unused sequential element reset_st_tmr_reg was removed.  [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_debug_probes.v:152]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'debug_axi4l_s_inst'. This will prevent further optimization [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_debug_wrapper.v:198]
+WARNING: [Synth 8-6014] Unused sequential element pre_st_reg was removed.  [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_debug_axi4l_s.v:124]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'jtag_axi4l_m_inst'. This will prevent further optimization [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_debug_wrapper.v:239]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'debug_probes_inst'. This will prevent further optimization [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0_debug_wrapper.v:167]
+WARNING: [Synth 8-7129] Port axi_rd_reset in module jtag_axi_v1_2_20_read_axilite is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rx_fifo_full in module jtag_axi_v1_2_20_read_axilite is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_wr_reset in module jtag_axi_v1_2_20_write_axilite is either unconnected or has no load
+WARNING: [Synth 8-7129] Port tx_fifo_empty in module jtag_axi_v1_2_20_write_axilite is either unconnected or has no load
+WARNING: [Synth 8-7129] Port write_data_valid in module jtag_axi_v1_2_20_write_axilite is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awid[0] in module jtag_axi_v1_2_20_axi_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awlen[7] in module jtag_axi_v1_2_20_axi_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awlen[6] in module jtag_axi_v1_2_20_axi_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awlen[5] in module jtag_axi_v1_2_20_axi_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awlen[4] in module jtag_axi_v1_2_20_axi_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awlen[3] in module jtag_axi_v1_2_20_axi_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awlen[2] in module jtag_axi_v1_2_20_axi_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awlen[1] in module jtag_axi_v1_2_20_axi_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awlen[0] in module jtag_axi_v1_2_20_axi_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awsize[2] in module jtag_axi_v1_2_20_axi_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awsize[1] in module jtag_axi_v1_2_20_axi_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awsize[0] in module jtag_axi_v1_2_20_axi_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awburst[1] in module jtag_axi_v1_2_20_axi_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awburst[0] in module jtag_axi_v1_2_20_axi_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awlock in module jtag_axi_v1_2_20_axi_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awcache[3] in module jtag_axi_v1_2_20_axi_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awcache[2] in module jtag_axi_v1_2_20_axi_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awcache[1] in module jtag_axi_v1_2_20_axi_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awcache[0] in module jtag_axi_v1_2_20_axi_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awqos[3] in module jtag_axi_v1_2_20_axi_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awqos[2] in module jtag_axi_v1_2_20_axi_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awqos[1] in module jtag_axi_v1_2_20_axi_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awqos[0] in module jtag_axi_v1_2_20_axi_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_wlast in module jtag_axi_v1_2_20_axi_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arid[0] in module jtag_axi_v1_2_20_axi_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arlen[7] in module jtag_axi_v1_2_20_axi_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arlen[6] in module jtag_axi_v1_2_20_axi_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arlen[5] in module jtag_axi_v1_2_20_axi_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arlen[4] in module jtag_axi_v1_2_20_axi_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arlen[3] in module jtag_axi_v1_2_20_axi_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arlen[2] in module jtag_axi_v1_2_20_axi_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arlen[1] in module jtag_axi_v1_2_20_axi_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arlen[0] in module jtag_axi_v1_2_20_axi_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arsize[2] in module jtag_axi_v1_2_20_axi_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arsize[1] in module jtag_axi_v1_2_20_axi_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arsize[0] in module jtag_axi_v1_2_20_axi_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arburst[1] in module jtag_axi_v1_2_20_axi_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arburst[0] in module jtag_axi_v1_2_20_axi_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arlock in module jtag_axi_v1_2_20_axi_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arcache[3] in module jtag_axi_v1_2_20_axi_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arcache[2] in module jtag_axi_v1_2_20_axi_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arcache[1] in module jtag_axi_v1_2_20_axi_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arcache[0] in module jtag_axi_v1_2_20_axi_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arqos[3] in module jtag_axi_v1_2_20_axi_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arqos[2] in module jtag_axi_v1_2_20_axi_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arqos[1] in module jtag_axi_v1_2_20_axi_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arqos[0] in module jtag_axi_v1_2_20_axi_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_bid[0] in module jtag_axi_v1_2_20_axi_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_rlast in module jtag_axi_v1_2_20_axi_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_rid[0] in module jtag_axi_v1_2_20_axi_bridge is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ALMOST_FULL_I in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_I in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ALMOST_EMPTY_I in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_EMPTY_I in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_ACK_I in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OVERFLOW_I in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port UNDERFLOW_I in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[4] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[3] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[2] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[1] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DATA_COUNT_I[0] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[4] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[3] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[2] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[1] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_DATA_COUNT_I[0] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[4] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[3] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[2] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[1] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_DATA_COUNT_I[0] in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SBITERR_I in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DBITERR_I in module output_blk__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_RST in module wr_status_flags_as__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RST_FULL_FF in module wr_status_flags_as__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SAFETY_CKT_WR_RST in module wr_status_flags_as__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS3[3] in module wr_status_flags_as__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS3[2] in module wr_status_flags_as__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS3[1] in module wr_status_flags_as__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_PNTR_PLUS3[0] in module wr_status_flags_as__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RST in module wr_bin_cntr__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_EN_INTO_LOGIC in module wr_logic__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_RST_INTO_LOGIC in module wr_logic__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RD_EN in module wr_logic__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SRST_FULL_FF in module wr_logic__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WR_RST_BUSY in module wr_logic__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EMPTY in module wr_logic__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RAM_RD_EN in module wr_logic__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ALMOST_EMPTY in module wr_logic__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH[3] in module wr_logic__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH[2] in module wr_logic__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH[1] in module wr_logic__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH[0] in module wr_logic__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PROG_FULL_THRESH_ASSERT[3] in module wr_logic__parameterized0 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1545.805 ; gain = 973.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1545.805 ; gain = 973.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1545.805 ; gain = 973.855
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.162 . Memory (MB): peak = 1545.805 ; gain = 0.000
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'inst/inst/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/pclk_i1_bufgctrl.pclk_i1' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
+INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/synth/pcie_7x_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/synth/pcie_7x_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/ip_0/constraints/jtag_axi.xdc] for cell 'inst/inst/debug_wrapper_U/jtag_axi4l_m_inst/inst'
+Finished Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/ip_0/constraints/jtag_axi.xdc] for cell 'inst/inst/debug_wrapper_U/jtag_axi4l_m_inst/inst'
+Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0-PCIE_X0Y0.xdc] for cell 'inst'
+INFO: [Timing 38-2] Deriving generated clocks [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0-PCIE_X0Y0.xdc:133]
+WARNING: [Vivado 12-627] No clocks matched 'sys_clk'. [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0-PCIE_X0Y0.xdc:147]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0-PCIE_X0Y0.xdc:147]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks sys_clk]'. [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0-PCIE_X0Y0.xdc:147]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group '. [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0-PCIE_X0Y0.xdc:147]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-5201] set_clock_groups: cannot set the clock group when only one non-empty group remains. [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0-PCIE_X0Y0.xdc:147]
+WARNING: [Vivado 12-627] No clocks matched 'sys_clk'. [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0-PCIE_X0Y0.xdc:148]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0-PCIE_X0Y0.xdc:148]
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group [get_clocks sys_clk]'. [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0-PCIE_X0Y0.xdc:148]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-4739] set_clock_groups:No valid object(s) found for '-group '. [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0-PCIE_X0Y0.xdc:148]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+CRITICAL WARNING: [Vivado 12-5201] set_clock_groups: cannot set the clock group when only one non-empty group remains. [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0-PCIE_X0Y0.xdc:148]
+Finished Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0-PCIE_X0Y0.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0-PCIE_X0Y0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/pcie_7x_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/pcie_7x_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.runs/pcie_7x_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.runs/pcie_7x_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.runs/pcie_7x_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/pcie_7x_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/pcie_7x_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/ip_xilinx_pcie_2_1_7x_late.xdc] for cell 'inst'
+Finished Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/ip_xilinx_pcie_2_1_7x_late.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/ip_xilinx_pcie_2_1_7x_late.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/pcie_7x_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/pcie_7x_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/pcie_7x_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/pcie_7x_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/pcie_7x_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/pcie_7x_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/pcie_7x_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/pcie_7x_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/pcie_7x_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/pcie_7x_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Xilinx/Vivado/2024.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/pcie_7x_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/pcie_7x_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 15 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1545.805 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.063 . Memory (MB): peak = 1545.805 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1545.805 ; gain = 973.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tfgg484-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1545.805 ; gain = 973.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property keep_hierarchy = soft for inst. (constraint file  d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/ip_0/constraints/jtag_axi.xdc, line 74).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/inst/debug_wrapper_U/jtag_axi4l_m_inst/inst. (constraint file  D:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.runs/pcie_7x_0_synth_1/dont_touch.xdc, line 11).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  D:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.runs/pcie_7x_0_synth_1/dont_touch.xdc, line 15).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/inst/debug_wrapper_U/jtag_axi4l_m_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/inst/debug_wrapper_U/debug_probes_inst/negotiated_width_xpm_cdc_array_single_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/inst/debug_wrapper_U/debug_probes_inst/cur_speed_xpm_cdc_array_single_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/inst/debug_wrapper_U/jtag_axi4l_m_inst/inst/jtag_axi_engine_u/tx_fifo_i/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /rd_pntr_cdc_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/inst/debug_wrapper_U/jtag_axi4l_m_inst/inst/jtag_axi_engine_u/rx_fifo_i/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /rd_pntr_cdc_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/inst/debug_wrapper_U/jtag_axi4l_m_inst/inst/jtag_axi_engine_u/tx_fifo_i/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /wr_pntr_cdc_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/inst/debug_wrapper_U/jtag_axi4l_m_inst/inst/jtag_axi_engine_u/rx_fifo_i/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /wr_pntr_cdc_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/inst/debug_wrapper_U/jtag_axi4l_m_inst/inst/jtag_axi_engine_u/wr_cmd_fifo_i/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /rd_pntr_cdc_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/inst/debug_wrapper_U/jtag_axi4l_m_inst/inst/jtag_axi_engine_u/rd_cmd_fifo_i/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /rd_pntr_cdc_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/inst/debug_wrapper_U/jtag_axi4l_m_inst/inst/jtag_axi_engine_u/wr_cmd_fifo_i/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /wr_pntr_cdc_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/inst/debug_wrapper_U/jtag_axi4l_m_inst/inst/jtag_axi_engine_u/rd_cmd_fifo_i/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /wr_pntr_cdc_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/inst/phy_lnk_up_cdc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/inst/pl_received_hot_rst_cdc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/inst/debug_wrapper_U/debug_probes_inst/\genblk1.GEN_RXDET_TRC_MEM[0].rxdet_trc_mem_inst . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/inst/debug_wrapper_U/debug_probes_inst/reset_state_mem_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/inst/debug_wrapper_U/debug_probes_inst/ltssm_trace_mem_inst. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1545.805 ; gain = 973.855
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'reg_state_eios_det_reg' in module 'pcie_7x_0_gt_rx_valid_filter_7x'
+INFO: [Synth 8-802] inferred FSM for state register 'fsm_reg' in module 'pcie_7x_0_gtp_pipe_reset'
+INFO: [Synth 8-802] inferred FSM for state register 'fsm_reg' in module 'pcie_7x_0_qpll_reset'
+INFO: [Synth 8-802] inferred FSM for state register 'fsm_reg' in module 'pcie_7x_0_gtp_pipe_rate'
+INFO: [Synth 8-802] inferred FSM for state register 'fsm_reg' in module 'pcie_7x_0_rxeq_scan'
+INFO: [Synth 8-802] inferred FSM for state register 'fsm_tx_reg' in module 'pcie_7x_0_pipe_eq'
+INFO: [Synth 8-802] inferred FSM for state register 'fsm_rx_reg' in module 'pcie_7x_0_pipe_eq'
+INFO: [Synth 8-802] inferred FSM for state register 'fsm_reg' in module 'pcie_7x_0_qpll_drp'
+INFO: [Synth 8-802] inferred FSM for state register 'resetovrd.fsm_reg' in module 'pcie_7x_0_pipe_user'
+INFO: [Synth 8-802] inferred FSM for state register 'txsync_fsm.fsm_tx_reg' in module 'pcie_7x_0_pipe_sync'
+INFO: [Synth 8-802] inferred FSM for state register 'cur_st_reg' in module 'pcie_7x_0_debug_axi4l_s'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'jtag_axi_v1_2_20_cmd_decode'
+INFO: [Synth 8-802] inferred FSM for state register 'gpregsm1.curr_fwft_state_reg' in module 'rd_fwft'
+INFO: [Synth 8-802] inferred FSM for state register 'wr_done_state_reg' in module 'jtag_axi_v1_2_20_jtag_axi_engine'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_done_state_reg' in module 'jtag_axi_v1_2_20_jtag_axi_engine'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'jtag_axi_v1_2_20_write_axilite'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'jtag_axi_v1_2_20_read_axilite'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+            EIOS_DET_IDL |                            00001 |                            00001
+        EIOS_DET_NO_STR0 |                            00010 |                            00010
+           EIOS_DET_STR0 |                            00100 |                            00100
+           EIOS_DET_STR1 |                            01000 |                            01000
+           EIOS_DET_DONE |                            10000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'reg_state_eios_det_reg' in module 'pcie_7x_0_gt_rx_valid_filter_7x'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            FSM_CFG_WAIT |                  000000000000001 |                            00001
+            FSM_PLLRESET |                  001000000000000 |                            00010
+       FSM_DRP_X16_START |                  000001000000000 |                            00011
+        FSM_DRP_X16_DONE |                  000010000000000 |                            00100
+             FSM_PLLLOCK |                  000000100000000 |                            00101
+             FSM_GTRESET |                  000000001000000 |                            00110
+    FSM_RXPMARESETDONE_1 |                  000000000000100 |                            00111
+    FSM_RXPMARESETDONE_2 |                  000000000001000 |                            01000
+       FSM_DRP_X20_START |                  000000000010000 |                            01001
+        FSM_DRP_X20_DONE |                  000000000100000 |                            01010
+           FSM_MMCM_LOCK |                  100000000000000 |                            01011
+           FSM_RESETDONE |                  010000000000000 |                            01100
+        FSM_TXSYNC_START |                  000100000000000 |                            01101
+         FSM_TXSYNC_DONE |                  000000010000000 |                            01110
+                FSM_IDLE |                  000000000000010 |                            00000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'fsm_reg' using encoding 'one-hot' in module 'pcie_7x_0_gtp_pipe_reset'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+           FSM_WAIT_LOCK |                         00000001 |                             0010
+           FSM_MMCM_LOCK |                         00000010 |                             0011
+       FSM_DRP_START_NOM |                         00000100 |                             0100
+        FSM_DRP_DONE_NOM |                         00001000 |                             0101
+            FSM_QPLLLOCK |                         00010000 |                             0110
+        FSM_QPLL_PDRESET |                         00100000 |                             1011
+             FSM_QPLL_PD |                         01000000 |                             1100
+                FSM_IDLE |                         10000000 |                             0001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'fsm_reg' using encoding 'one-hot' in module 'pcie_7x_0_qpll_reset'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                FSM_IDLE |                    0000000010000 |                             0000
+         FSM_TXDATA_WAIT |                    0000100000000 |                             0001
+            FSM_PCLK_SEL |                    0000000001000 |                             0010
+       FSM_DRP_X16_START |                    0000000000001 |                             0011
+        FSM_DRP_X16_DONE |                    0000000000010 |                             0100
+            FSM_RATE_SEL |                    0000000000100 |                             0101
+      FSM_RXPMARESETDONE |                    1000000000000 |                             0110
+       FSM_DRP_X20_START |                    0001000000000 |                             0111
+        FSM_DRP_X20_DONE |                    0010000000000 |                             1000
+           FSM_RATE_DONE |                    0100000000000 |                             1001
+        FSM_TXSYNC_START |                    0000010000000 |                             1010
+         FSM_TXSYNC_DONE |                    0000001000000 |                             1011
+                FSM_DONE |                    0000000100000 |                             1100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'fsm_reg' using encoding 'one-hot' in module 'pcie_7x_0_gtp_pipe_rate'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                            00001 |                             0000
+*
+                FSM_IDLE |                            00010 |                             0001
+              FSM_PRESET |                            00100 |                             0010
+            FSM_CONVERGE |                            01000 |                             0100
+     FSM_NEW_TXCOEFF_REQ |                            10000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'fsm_reg' using encoding 'one-hot' in module 'pcie_7x_0_rxeq_scan'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                           000000
+*
+           FSM_TXEQ_IDLE |                              001 |                           000001
+         FSM_TXEQ_PRESET |                              010 |                           000010
+        FSM_TXEQ_TXCOEFF |                              011 |                           000100
+          FSM_TXEQ_REMAP |                              100 |                           001000
+          FSM_TXEQ_QUERY |                              101 |                           010000
+           FSM_TXEQ_DONE |                              110 |                           100000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'fsm_tx_reg' using encoding 'sequential' in module 'pcie_7x_0_pipe_eq'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                          0000001 |                           000000
+*
+           FSM_RXEQ_IDLE |                          0000010 |                           000001
+         FSM_RXEQ_PRESET |                          0000100 |                           000010
+        FSM_RXEQ_TXCOEFF |                          0001000 |                           000100
+             FSM_RXEQ_LF |                          0010000 |                           001000
+FSM_RXEQ_NEW_TXCOEFF_REQ |                          0100000 |                           010000
+           FSM_RXEQ_DONE |                          1000000 |                           100000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'fsm_rx_reg' using encoding 'one-hot' in module 'pcie_7x_0_pipe_eq'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                FSM_IDLE |                        000000001 |                        000000001
+                FSM_LOAD |                        000000010 |                        000000010
+                FSM_READ |                        000000100 |                        000000100
+                FSM_RRDY |                        000001000 |                        000001000
+               FSM_WRITE |                        000010000 |                        000010000
+                FSM_WRDY |                        000100000 |                        000100000
+                FSM_DONE |                        001000000 |                        001000000
+           FSM_QPLLRESET |                        010000000 |                        010000000
+            FSM_QPLLLOCK |                        100000000 |                        100000000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'fsm_reg' in module 'pcie_7x_0_qpll_drp'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                FSM_IDLE |                             0010 |                               00
+           FSM_RESETOVRD |                             1000 |                               01
+          FSM_RESET_INIT |                             0100 |                               10
+               FSM_RESET |                             0001 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'resetovrd.fsm_reg' using encoding 'one-hot' in module 'pcie_7x_0_pipe_user'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                          0000001 |                           000000
+*
+         FSM_TXSYNC_IDLE |                          0000010 |                           000001
+           FSM_MMCM_LOCK |                          0000100 |                           000010
+        FSM_TXSYNC_START |                          0001000 |                           000100
+        FSM_TXPHINITDONE |                          0010000 |                           001000
+        FSM_TXSYNC_DONE1 |                          0100000 |                           010000
+        FSM_TXSYNC_DONE2 |                          1000000 |                           100000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'txsync_fsm.fsm_tx_reg' using encoding 'one-hot' in module 'pcie_7x_0_pipe_sync'
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 IDLE_ST |                              000 |                              000
+                   WR_ST |                              001 |                              001
+                 WR_DATA |                              010 |                              010
+                   WR_WT |                              011 |                              011
+                 WR_RESP |                              100 |                              100
+                   RD_ST |                              101 |                              101
+                   RD_WT |                              110 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cur_st_reg' using encoding 'sequential' in module 'pcie_7x_0_debug_axi4l_s'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+           READ_CMD_FIFO |                               01 |                               01
+         AXI_TRANSACTION |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'jtag_axi_v1_2_20_cmd_decode'
+INFO: [Synth 8-6159] Found Keep on FSM register 'gpregsm1.curr_fwft_state_reg' in module 'rd_fwft', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 invalid |                               00 |                               00
+            stage1_valid |                               10 |                               10
+       both_stages_valid |                               11 |                               11
+            stage2_valid |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                RDQ_IDLE |                              001 |                              001
+             RDQ_CMD_CNT |                              010 |                              010
+            RDQ_DONE_CNT |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'rd_done_state_reg' in module 'jtag_axi_v1_2_20_jtag_axi_engine'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                WRQ_IDLE |                              001 |                              001
+             WRQ_CMD_CNT |                              010 |                              010
+            WRQ_DONE_CNT |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'wr_done_state_reg' in module 'jtag_axi_v1_2_20_jtag_axi_engine'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+            READ_TX_FIFO |                           000001 |                           000001
+        AXI_WR_ADDR_DATA |                           000010 |                           000010
+      AXI_WR_SLAVE_READY |                           000100 |                           000100
+             WAIT_WREADY |                           010000 |                           010000
+            WAIT_AWREADY |                           001000 |                           001000
+         AXI_WR_RESPONSE |                           100000 |                           100000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'jtag_axi_v1_2_20_write_axilite'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                READ_AXI |                              001 |                              001
+             AXI_RD_ADDR |                              010 |                              010
+             AXI_RD_DATA |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_reg' in module 'jtag_axi_v1_2_20_read_axilite'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1545.805 ; gain = 973.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   22 Bit       Adders := 1     
+	   2 Input   12 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 6     
+	   2 Input    6 Bit       Adders := 2     
+	   2 Input    5 Bit       Adders := 4     
+	   2 Input    4 Bit       Adders := 10    
+	   2 Input    3 Bit       Adders := 5     
+	   2 Input    2 Bit       Adders := 5     
+	   2 Input    1 Bit       Adders := 3     
++---XORs : 
+	   2 Input      8 Bit         XORs := 4     
+	   2 Input      6 Bit         XORs := 1     
+	   2 Input      5 Bit         XORs := 1     
+	   2 Input      4 Bit         XORs := 4     
+	   2 Input      1 Bit         XORs := 142   
++---Registers : 
+	              128 Bit    Registers := 3     
+	               96 Bit    Registers := 2     
+	               64 Bit    Registers := 13    
+	               32 Bit    Registers := 9     
+	               22 Bit    Registers := 2     
+	               19 Bit    Registers := 1     
+	               18 Bit    Registers := 8     
+	               17 Bit    Registers := 2     
+	               16 Bit    Registers := 32    
+	               12 Bit    Registers := 1     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 34    
+	                7 Bit    Registers := 2     
+	                6 Bit    Registers := 20    
+	                5 Bit    Registers := 15    
+	                4 Bit    Registers := 50    
+	                3 Bit    Registers := 23    
+	                2 Bit    Registers := 25    
+	                1 Bit    Registers := 411   
++---RAMs : 
+	               8K Bit	(512 X 16 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   64 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 1     
+	   2 Input   22 Bit        Muxes := 4     
+	   5 Input   22 Bit        Muxes := 1     
+	   2 Input   19 Bit        Muxes := 1     
+	   7 Input   19 Bit        Muxes := 1     
+	   2 Input   18 Bit        Muxes := 3     
+	   7 Input   18 Bit        Muxes := 2     
+	   3 Input   17 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 5     
+	   4 Input   16 Bit        Muxes := 1     
+	  15 Input   15 Bit        Muxes := 1     
+	   2 Input   15 Bit        Muxes := 13    
+	  13 Input   13 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 10    
+	   2 Input   12 Bit        Muxes := 3     
+	   2 Input   10 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 4     
+	  10 Input    9 Bit        Muxes := 1     
+	   3 Input    9 Bit        Muxes := 1     
+	   5 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 11    
+	   8 Input    8 Bit        Muxes := 2     
+	   2 Input    7 Bit        Muxes := 13    
+	   7 Input    7 Bit        Muxes := 2     
+	   4 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 6     
+	   7 Input    6 Bit        Muxes := 4     
+	   8 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 18    
+	   3 Input    5 Bit        Muxes := 1     
+	   6 Input    5 Bit        Muxes := 1     
+	  15 Input    5 Bit        Muxes := 1     
+	   8 Input    5 Bit        Muxes := 1     
+	   5 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 12    
+	   8 Input    4 Bit        Muxes := 1     
+	   7 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   3 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 21    
+	   3 Input    3 Bit        Muxes := 1     
+	  13 Input    3 Bit        Muxes := 1     
+	   7 Input    3 Bit        Muxes := 4     
+	   4 Input    3 Bit        Muxes := 4     
+	  10 Input    3 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 5     
+	   2 Input    2 Bit        Muxes := 55    
+	   7 Input    2 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 2     
+	   5 Input    2 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 112   
+	   6 Input    1 Bit        Muxes := 3     
+	  15 Input    1 Bit        Muxes := 3     
+	   8 Input    1 Bit        Muxes := 7     
+	  13 Input    1 Bit        Muxes := 1     
+	   5 Input    1 Bit        Muxes := 8     
+	   4 Input    1 Bit        Muxes := 33    
+	   7 Input    1 Bit        Muxes := 29    
+	  10 Input    1 Bit        Muxes := 3     
+	   3 Input    1 Bit        Muxes := 14    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5784] Optimized 4 bits of RAM "gen_wr_a.gen_word_narrow.mem_reg" due to constant propagation. Old ram width 16 bits, new ram width 12 bits.
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-3332] Sequential element (inst/gt_top_i/pipe_wrapper_i/qpll_reset.qpll_reset_i/FSM_onehot_fsm_reg[7]) is unused and will be removed from module pcie_7x_0_pcie2_top.
+INFO: [Synth 8-3332] Sequential element (inst/gt_top_i/pipe_wrapper_i/qpll_reset.qpll_reset_i/FSM_onehot_fsm_reg[6]) is unused and will be removed from module pcie_7x_0_pcie2_top.
+INFO: [Synth 8-3332] Sequential element (inst/gt_top_i/pipe_wrapper_i/qpll_reset.qpll_reset_i/FSM_onehot_fsm_reg[5]) is unused and will be removed from module pcie_7x_0_pcie2_top.
+INFO: [Synth 8-3332] Sequential element (inst/gt_top_i/pipe_wrapper_i/qpll_reset.qpll_reset_i/FSM_onehot_fsm_reg[4]) is unused and will be removed from module pcie_7x_0_pcie2_top.
+INFO: [Synth 8-3332] Sequential element (inst/gt_top_i/pipe_wrapper_i/qpll_reset.qpll_reset_i/FSM_onehot_fsm_reg[3]) is unused and will be removed from module pcie_7x_0_pcie2_top.
+INFO: [Synth 8-3332] Sequential element (inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].pipe_eq.pipe_eq_i/rxeq_scan_i/FSM_onehot_fsm_reg[0]) is unused and will be removed from module pcie_7x_0_pcie2_top.
+INFO: [Synth 8-3332] Sequential element (inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].pipe_eq.pipe_eq_i/FSM_onehot_fsm_rx_reg[0]) is unused and will be removed from module pcie_7x_0_pcie2_top.
+INFO: [Synth 8-3332] Sequential element (inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].pipe_sync_i/FSM_onehot_txsync_fsm.fsm_tx_reg[0]) is unused and will be removed from module pcie_7x_0_pcie2_top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1545.805 ; gain = 973.855
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++----------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                                                                             | RTL Object                       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++----------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst/\inst/debug_wrapper_U/debug_probes_inst /ltssm_trace_mem_inst/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 512 x 16(NO_CHANGE)    | W |   | 512 x 16(NO_CHANGE)    |   | R | Port A and B     | 1      | 0      | 
++----------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++---------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+----------------+----------------------+----------------+
+|Module Name                                                                                                          | RTL Object                                                                                                | Inference      | Size (Depth x Width) | Primitives     | 
++---------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+----------------+----------------------+----------------+
+|inst/\inst/debug_wrapper_U/debug_probes_inst /\genblk1.GEN_RXDET_TRC_MEM[0].rxdet_trc_mem_inst /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg                                                                          | User Attribute | 4 x 16               | RAM16X1D x 16  | 
+|inst/\inst/debug_wrapper_U/debug_probes_inst /reset_state_mem_inst/xpm_memory_base_inst                              | gen_wr_a.gen_word_narrow.mem_reg                                                                          | User Attribute | 32 x 16              | RAM32X1D x 16  | 
+|inst/\inst/debug_wrapper_U/jtag_axi4l_m_inst /inst                                                                   | jtag_axi_engine_u/tx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 256 x 32             | RAM64M x 44    | 
++---------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+----------------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1545.805 ; gain = 973.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1573.082 ; gain = 1001.133
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++----------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                                                                             | RTL Object                       | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++----------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst/\inst/debug_wrapper_U/debug_probes_inst /ltssm_trace_mem_inst/xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | 512 x 16(NO_CHANGE)    | W |   | 512 x 16(NO_CHANGE)    |   | R | Port A and B     | 1      | 0      | 
++----------------------------------------------------------------------------------------+----------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping Report
++---------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+----------------+----------------------+----------------+
+|Module Name                                                                                                          | RTL Object                                                                                                | Inference      | Size (Depth x Width) | Primitives     | 
++---------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+----------------+----------------------+----------------+
+|inst/\inst/debug_wrapper_U/debug_probes_inst /\genblk1.GEN_RXDET_TRC_MEM[0].rxdet_trc_mem_inst /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg                                                                          | User Attribute | 4 x 16               | RAM16X1D x 16  | 
+|inst/\inst/debug_wrapper_U/debug_probes_inst /reset_state_mem_inst/xpm_memory_base_inst                              | gen_wr_a.gen_word_narrow.mem_reg                                                                          | User Attribute | 32 x 16              | RAM32X1D x 16  | 
+|inst/\inst/debug_wrapper_U/jtag_axi4l_m_inst /inst                                                                   | jtag_axi_engine_u/tx_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg | User Attribute | 256 x 32             | RAM64M x 44    | 
++---------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+----------------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 1573.141 ; gain = 1001.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3295] tying undriven pin trc_di_inferred:in0[15] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trc_di_inferred:in0[14] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trc_di_inferred:in0[13] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trc_di_inferred:in0[12] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trc_di_inferred:in0[11] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trc_di_inferred:in0[10] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trc_di_inferred:in0[9] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trc_di_inferred:in0[8] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trc_di_inferred:in0[7] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trc_di_inferred:in0[6] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trc_di_inferred:in0[5] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trc_di_inferred:in0[4] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trc_di_inferred:in0[3] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trc_di_inferred:in0[2] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trc_di_inferred:in0[1] to constant 0
+INFO: [Synth 8-3295] tying undriven pin trc_di_inferred:in0[0] to constant 0
+INFO: [Synth 8-3295] tying undriven pin jtag_axi_engine_u/wr_cmd_fifowren_axi_ff_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin jtag_axi_engine_u/rd_cmd_fifowren_axi_ff_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin jtag_axi_engine_u/wr_cmd_fifowren_axi_ff3_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin jtag_axi_engine_u/rd_cmd_fifowren_axi_ff3_inferred:in0 to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[36] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[35] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[34] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[33] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[32] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[31] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[30] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[29] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[28] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[27] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[26] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[25] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[24] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[23] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[22] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[21] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[20] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[19] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[18] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[17] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[16] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[15] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[14] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[13] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[12] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[11] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[10] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[9] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[8] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[7] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[6] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[5] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[4] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[3] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[2] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[1] to constant 0
+INFO: [Synth 8-3295] tying undriven pin inst:sl_iport0[0] to constant 0
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1757.699 ; gain = 1185.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1757.699 ; gain = 1185.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1757.699 ; gain = 1185.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1757.699 ; gain = 1185.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1757.699 ; gain = 1185.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1757.699 ; gain = 1185.750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++--------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name               | RTL Name                                                                                                                                                                                                                               | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++--------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|jtag_axi_v1_2_20_jtag_axi | jtag_axi_engine_u/wr_cmd_fifo_i/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/SAFETY_CKT_GEN.RSTB_SHFT_REG_reg[4] | 4      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|pcie_7x_0_pcie2_top       | inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].pipe_quad.gt_common_enabled.gt_common_int.gt_common_i/qpll_wrapper_i/cpllPDInst/cpllpd_wait_reg[95]                                                                                          | 96     | 1     | NO           | NO                 | YES               | 0      | 3       | 
+|pcie_7x_0_pcie2_top       | inst/gt_top_i/pipe_wrapper_i/pipe_lane[0].pipe_quad.gt_common_enabled.gt_common_int.gt_common_i/qpll_wrapper_i/cpllPDInst/cpllreset_wait_reg[127]                                                                                      | 128    | 1     | NO           | NO                 | YES               | 0      | 4       | 
+|pcie_7x_0_pcie2_top       | inst/ltssm_reg2_reg[5]                                                                                                                                                                                                                 | 3      | 6     | NO           | NO                 | YES               | 6      | 0       | 
++--------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |BUFG          |     5|
+|2     |BUFGCTRL      |     1|
+|3     |CARRY4        |    12|
+|4     |GTPE2_CHANNEL |     1|
+|5     |GTPE2_COMMON  |     1|
+|6     |LUT1          |    96|
+|7     |LUT2          |   237|
+|8     |LUT3          |   281|
+|9     |LUT4          |   205|
+|10    |LUT5          |   222|
+|11    |LUT6          |   373|
+|12    |MMCME2_ADV    |     1|
+|13    |MUXF7         |     1|
+|14    |PCIE_2        |     1|
+|15    |RAM16X1D      |    16|
+|16    |RAM32X1D      |    16|
+|17    |RAM64M        |    44|
+|18    |RAMB18E1      |     2|
+|20    |RAMB36E1      |    10|
+|22    |SRL16E        |     8|
+|23    |SRLC32E       |     7|
+|24    |FDCE          |    45|
+|25    |FDPE          |     4|
+|26    |FDRE          |  2954|
+|27    |FDSE          |    51|
++------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1757.699 ; gain = 1185.750
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 828 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:32 . Memory (MB): peak = 1757.699 ; gain = 1185.750
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1757.699 ; gain = 1185.750
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.087 . Memory (MB): peak = 1764.242 ; gain = 0.000
+WARNING: [Netlist 29-345] The value of SIM_DEVICE on instance 'inst/inst/gt_top_i/pipe_wrapper_i/pipe_clock_int.pipe_clock_i/pclk_i1_bufgctrl.pclk_i1' of type 'BUFGCTRL' is 'ULTRASCALE'; it is being changed to match the current FPGA architecture, '7SERIES'. For functional simulation to match hardware behavior, the value of SIM_DEVICE should be changed in the source netlist. 
+INFO: [Netlist 29-17] Analyzing 102 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1771.922 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 76 instances were transformed.
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 16 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 16 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 44 instances
+
+Synth Design complete | Checksum: 3aa80ce8
+INFO: [Common 17-83] Releasing license: Synthesis
+280 Infos, 131 Warnings, 6 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1771.922 ; gain = 1391.758
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1771.922 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.runs/pcie_7x_0_synth_1/pcie_7x_0.dcp' has been generated.
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Coretcl 2-1174] Renamed 110 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1771.922 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.runs/pcie_7x_0_synth_1/pcie_7x_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file pcie_7x_0_utilization_synth.rpt -pb pcie_7x_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  9 20:30:34 2024...

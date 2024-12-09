@@ -1,0 +1,299 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Mon Dec  9 20:34:14 2024
+# Process ID         : 26984
+# Current directory  : D:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.runs/impl_1
+# Command line       : vivado.exe -log pcileech_squirrel_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source pcileech_squirrel_top.tcl -notrace
+# Log file           : D:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.runs/impl_1/pcileech_squirrel_top.vdi
+# Journal file       : D:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.runs/impl_1\vivado.jou
+# Running On         : SecHex-FR54PQQ
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 22000
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i5-13600KF
+# CPU Frequency      : 3494 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 20
+# Host memory        : 34162 MB
+# Swap memory        : 34359 MB
+# Total Virtual      : 68522 MB
+# Available Virtual  : 49885 MB
+#-----------------------------------------------------------
+source pcileech_squirrel_top.tcl -notrace
+Command: link_design -top pcileech_squirrel_top -part xc7a35tfgg484-2
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a35tfgg484-2
+INFO: [Project 1-454] Reading design checkpoint 'd:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_256_32_clk2_comtx/fifo_256_32_clk2_comtx.dcp' for cell 'i_pcileech_com/i_fifo_256_32_clk2_comtx'
+INFO: [Project 1-454] Reading design checkpoint 'd:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_32_32_clk1_comtx/fifo_32_32_clk1_comtx.dcp' for cell 'i_pcileech_com/i_fifo_32_32_clk2_comtx'
+INFO: [Project 1-454] Reading design checkpoint 'd:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_64_64_clk2_comrx/fifo_64_64_clk2_comrx.dcp' for cell 'i_pcileech_com/i_fifo_64_64_clk2_comrx'
+INFO: [Project 1-454] Reading design checkpoint 'd:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_64_64_clk1_fifocmd/fifo_64_64_clk1_fifocmd.dcp' for cell 'i_pcileech_fifo/i_fifo_cmd_rx'
+INFO: [Project 1-454] Reading design checkpoint 'd:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_34_34/fifo_34_34.dcp' for cell 'i_pcileech_fifo/i_fifo_cmd_tx'
+INFO: [Project 1-454] Reading design checkpoint 'd:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/pcie_7x_0.dcp' for cell 'i_pcileech_pcie_a7/i_pcie_7x_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_32_32_clk2/fifo_32_32_clk2.dcp' for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_cfg_a7/i_fifo_pcie_cfg_rx'
+INFO: [Project 1-454] Reading design checkpoint 'd:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_64_64/fifo_64_64.dcp' for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_cfg_a7/i_fifo_pcie_cfg_tx'
+INFO: [Project 1-454] Reading design checkpoint 'd:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/bram_bar_zero4k/bram_bar_zero4k.dcp' for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_bar0/i_bram_bar_zero4k'
+INFO: [Project 1-454] Reading design checkpoint 'd:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_134_134_clk1_bar_rdrsp/fifo_134_134_clk1_bar_rdrsp.dcp' for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/i_fifo_134_134_clk1_bar_rdrsp'
+INFO: [Project 1-454] Reading design checkpoint 'd:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_74_74_clk1_bar_rd1/fifo_74_74_clk1_bar_rd1.dcp' for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/i_fifo_74_74_clk1_bar_rd1'
+INFO: [Project 1-454] Reading design checkpoint 'd:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_141_141_clk1_bar_wr/fifo_141_141_clk1_bar_wr.dcp' for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_wrengine/i_fifo_141_141_clk1_bar_wr'
+INFO: [Project 1-454] Reading design checkpoint 'd:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_43_43_clk2/fifo_43_43_clk2.dcp' for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_cfgspace_shadow/i_fifo_43_43_clk2'
+INFO: [Project 1-454] Reading design checkpoint 'd:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_49_49_clk2/fifo_49_49_clk2.dcp' for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_cfgspace_shadow/i_fifo_49_49_clk2'
+INFO: [Project 1-454] Reading design checkpoint 'd:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_129_129_clk1/fifo_129_129_clk1.dcp' for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_cfgspace_shadow/i_pcileech_cfgspace_pcie_tx/i_fifo_129_129_clk1'
+INFO: [Project 1-454] Reading design checkpoint 'd:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/bram_pcie_cfgspace/bram_pcie_cfgspace.dcp' for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_cfgspace_shadow/i_pcileech_mem_wrap/i_bram_pcie_cfgspace'
+INFO: [Project 1-454] Reading design checkpoint 'd:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/drom_pcie_cfgspace_writemask/drom_pcie_cfgspace_writemask.dcp' for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_cfgspace_shadow/i_pcileech_mem_wrap/i_drom_pcie_cfgspace_writemask'
+INFO: [Project 1-454] Reading design checkpoint 'd:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_134_134_clk2/fifo_134_134_clk2.dcp' for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_dst_fifo/i_fifo_134_134_clk2'
+INFO: [Project 1-454] Reading design checkpoint 'd:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_134_134_clk2_rxfifo/fifo_134_134_clk2_rxfifo.dcp' for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_src_fifo/i_fifo_134_134_clk2_rxfifo'
+INFO: [Project 1-454] Reading design checkpoint 'd:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_1_1_clk2/fifo_1_1_clk2.dcp' for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_src_fifo/i_fifo_1_1_clk2'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.339 . Memory (MB): peak = 673.309 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3528 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Chipscope 16-324] Core: i_pcileech_pcie_a7/i_pcie_7x_0/inst/inst/debug_wrapper_U/jtag_axi4l_m_inst UUID: 7c7175eb-fc35-56cd-9709-76403ae58727 
+Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/ip_0/constraints/jtag_axi.xdc] for cell 'i_pcileech_pcie_a7/i_pcie_7x_0/inst/inst/debug_wrapper_U/jtag_axi4l_m_inst/inst'
+Finished Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/ip_0/constraints/jtag_axi.xdc] for cell 'i_pcileech_pcie_a7/i_pcie_7x_0/inst/inst/debug_wrapper_U/jtag_axi4l_m_inst/inst'
+Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0-PCIE_X0Y0.xdc] for cell 'i_pcileech_pcie_a7/i_pcie_7x_0/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0-PCIE_X0Y0.xdc:133]
+INFO: [Timing 38-2] Deriving generated clocks [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0-PCIE_X0Y0.xdc:133]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0-PCIE_X0Y0.xdc:147]
+CRITICAL WARNING: [Vivado 12-5201] set_clock_groups: cannot set the clock group when only one non-empty group remains. [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0-PCIE_X0Y0.xdc:147]
+INFO: [Vivado 12-626] No clocks found. Please use 'create_clock' or 'create_generated_clock' command to create clocks. [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0-PCIE_X0Y0.xdc:148]
+CRITICAL WARNING: [Vivado 12-5201] set_clock_groups: cannot set the clock group when only one non-empty group remains. [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0-PCIE_X0Y0.xdc:148]
+Finished Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/pcie_7x_0-PCIE_X0Y0.xdc] for cell 'i_pcileech_pcie_a7/i_pcie_7x_0/inst'
+Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_49_49_clk2/fifo_49_49_clk2.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_cfgspace_shadow/i_fifo_49_49_clk2/U0'
+Finished Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_49_49_clk2/fifo_49_49_clk2.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_cfgspace_shadow/i_fifo_49_49_clk2/U0'
+Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_32_32_clk2/fifo_32_32_clk2.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_cfg_a7/i_fifo_pcie_cfg_rx/U0'
+Finished Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_32_32_clk2/fifo_32_32_clk2.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_cfg_a7/i_fifo_pcie_cfg_rx/U0'
+Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_134_134_clk1_bar_rdrsp/fifo_134_134_clk1_bar_rdrsp.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/i_fifo_134_134_clk1_bar_rdrsp/U0'
+Finished Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_134_134_clk1_bar_rdrsp/fifo_134_134_clk1_bar_rdrsp.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/i_fifo_134_134_clk1_bar_rdrsp/U0'
+Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_141_141_clk1_bar_wr/fifo_141_141_clk1_bar_wr.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_wrengine/i_fifo_141_141_clk1_bar_wr/U0'
+Finished Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_141_141_clk1_bar_wr/fifo_141_141_clk1_bar_wr.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_wrengine/i_fifo_141_141_clk1_bar_wr/U0'
+Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_64_64/fifo_64_64.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_cfg_a7/i_fifo_pcie_cfg_tx/U0'
+Finished Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_64_64/fifo_64_64.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_cfg_a7/i_fifo_pcie_cfg_tx/U0'
+Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_129_129_clk1/fifo_129_129_clk1.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_cfgspace_shadow/i_pcileech_cfgspace_pcie_tx/i_fifo_129_129_clk1/U0'
+Finished Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_129_129_clk1/fifo_129_129_clk1.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_cfgspace_shadow/i_pcileech_cfgspace_pcie_tx/i_fifo_129_129_clk1/U0'
+Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_74_74_clk1_bar_rd1/fifo_74_74_clk1_bar_rd1.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/i_fifo_74_74_clk1_bar_rd1/U0'
+Finished Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_74_74_clk1_bar_rd1/fifo_74_74_clk1_bar_rd1.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_bar_controller/i_pcileech_tlps128_bar_rdengine/i_fifo_74_74_clk1_bar_rd1/U0'
+Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_32_32_clk1_comtx/fifo_32_32_clk1_comtx.xdc] for cell 'i_pcileech_com/i_fifo_32_32_clk2_comtx/U0'
+Finished Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_32_32_clk1_comtx/fifo_32_32_clk1_comtx.xdc] for cell 'i_pcileech_com/i_fifo_32_32_clk2_comtx/U0'
+Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_43_43_clk2/fifo_43_43_clk2.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_cfgspace_shadow/i_fifo_43_43_clk2/U0'
+Finished Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_43_43_clk2/fifo_43_43_clk2.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_cfgspace_shadow/i_fifo_43_43_clk2/U0'
+Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_34_34/fifo_34_34.xdc] for cell 'i_pcileech_fifo/i_fifo_cmd_tx/U0'
+Finished Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_34_34/fifo_34_34.xdc] for cell 'i_pcileech_fifo/i_fifo_cmd_tx/U0'
+Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_34_34/fifo_34_34.xdc] for cell 'i_pcileech_fifo/i_fifo_loop_tx/U0'
+Finished Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_34_34/fifo_34_34.xdc] for cell 'i_pcileech_fifo/i_fifo_loop_tx/U0'
+Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_64_64_clk2_comrx/fifo_64_64_clk2_comrx.xdc] for cell 'i_pcileech_com/i_fifo_64_64_clk2_comrx/U0'
+Finished Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_64_64_clk2_comrx/fifo_64_64_clk2_comrx.xdc] for cell 'i_pcileech_com/i_fifo_64_64_clk2_comrx/U0'
+Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_134_134_clk2_rxfifo/fifo_134_134_clk2_rxfifo.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_src_fifo/i_fifo_134_134_clk2_rxfifo/U0'
+Finished Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_134_134_clk2_rxfifo/fifo_134_134_clk2_rxfifo.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_src_fifo/i_fifo_134_134_clk2_rxfifo/U0'
+Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_1_1_clk2/fifo_1_1_clk2.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_src_fifo/i_fifo_1_1_clk2/U0'
+Finished Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_1_1_clk2/fifo_1_1_clk2.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_src_fifo/i_fifo_1_1_clk2/U0'
+Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_134_134_clk2/fifo_134_134_clk2.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_dst_fifo/i_fifo_134_134_clk2/U0'
+Finished Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_134_134_clk2/fifo_134_134_clk2.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_dst_fifo/i_fifo_134_134_clk2/U0'
+Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_256_32_clk2_comtx/fifo_256_32_clk2_comtx.xdc] for cell 'i_pcileech_com/i_fifo_256_32_clk2_comtx/U0'
+Finished Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_256_32_clk2_comtx/fifo_256_32_clk2_comtx.xdc] for cell 'i_pcileech_com/i_fifo_256_32_clk2_comtx/U0'
+Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_64_64_clk1_fifocmd/fifo_64_64_clk1_fifocmd.xdc] for cell 'i_pcileech_fifo/i_fifo_cmd_rx/U0'
+Finished Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_64_64_clk1_fifocmd/fifo_64_64_clk1_fifocmd.xdc] for cell 'i_pcileech_fifo/i_fifo_cmd_rx/U0'
+Parsing XDC File [D:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.srcs/constrs_1/imports/src/pcileech_squirrel.xdc]
+Finished Parsing XDC File [D:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.srcs/constrs_1/imports/src/pcileech_squirrel.xdc]
+Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/ip_xilinx_pcie_2_1_7x_late.xdc] for cell 'i_pcileech_pcie_a7/i_pcie_7x_0/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/ip_xilinx_pcie_2_1_7x_late.xdc:82]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/ip_xilinx_pcie_2_1_7x_late.xdc:87]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/ip_xilinx_pcie_2_1_7x_late.xdc:88]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/ip_xilinx_pcie_2_1_7x_late.xdc:89]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/ip_xilinx_pcie_2_1_7x_late.xdc:90]
+Finished Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/pcie_7x_0/source/ip_xilinx_pcie_2_1_7x_late.xdc] for cell 'i_pcileech_pcie_a7/i_pcie_7x_0/inst'
+Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_49_49_clk2/fifo_49_49_clk2_clocks.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_cfgspace_shadow/i_fifo_49_49_clk2/U0'
+Finished Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_49_49_clk2/fifo_49_49_clk2_clocks.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_cfgspace_shadow/i_fifo_49_49_clk2/U0'
+Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_32_32_clk2/fifo_32_32_clk2_clocks.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_cfg_a7/i_fifo_pcie_cfg_rx/U0'
+Finished Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_32_32_clk2/fifo_32_32_clk2_clocks.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_cfg_a7/i_fifo_pcie_cfg_rx/U0'
+Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_64_64/fifo_64_64_clocks.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_cfg_a7/i_fifo_pcie_cfg_tx/U0'
+Finished Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_64_64/fifo_64_64_clocks.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_cfg_a7/i_fifo_pcie_cfg_tx/U0'
+Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_43_43_clk2/fifo_43_43_clk2_clocks.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_cfgspace_shadow/i_fifo_43_43_clk2/U0'
+Finished Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_43_43_clk2/fifo_43_43_clk2_clocks.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_cfgspace_shadow/i_fifo_43_43_clk2/U0'
+Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_64_64_clk2_comrx/fifo_64_64_clk2_comrx_clocks.xdc] for cell 'i_pcileech_com/i_fifo_64_64_clk2_comrx/U0'
+Finished Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_64_64_clk2_comrx/fifo_64_64_clk2_comrx_clocks.xdc] for cell 'i_pcileech_com/i_fifo_64_64_clk2_comrx/U0'
+Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_134_134_clk2_rxfifo/fifo_134_134_clk2_rxfifo_clocks.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_src_fifo/i_fifo_134_134_clk2_rxfifo/U0'
+Finished Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_134_134_clk2_rxfifo/fifo_134_134_clk2_rxfifo_clocks.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_src_fifo/i_fifo_134_134_clk2_rxfifo/U0'
+Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_1_1_clk2/fifo_1_1_clk2_clocks.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_src_fifo/i_fifo_1_1_clk2/U0'
+Finished Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_1_1_clk2/fifo_1_1_clk2_clocks.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_src_fifo/i_fifo_1_1_clk2/U0'
+Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_134_134_clk2/fifo_134_134_clk2_clocks.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_dst_fifo/i_fifo_134_134_clk2/U0'
+Finished Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_134_134_clk2/fifo_134_134_clk2_clocks.xdc] for cell 'i_pcileech_pcie_a7/i_pcileech_pcie_tlp_a7/i_pcileech_tlps128_dst_fifo/i_fifo_134_134_clk2/U0'
+Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_256_32_clk2_comtx/fifo_256_32_clk2_comtx_clocks.xdc] for cell 'i_pcileech_com/i_fifo_256_32_clk2_comtx/U0'
+Finished Parsing XDC File [d:/code/pcileech-fpga/PCIeSquirrel/pcileech_squirrel/pcileech_squirrel.gen/sources_1/ip/fifo_256_32_clk2_comtx/fifo_256_32_clk2_comtx_clocks.xdc] for cell 'i_pcileech_com/i_fifo_256_32_clk2_comtx/U0'
+INFO: [Project 1-1714] 69 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-1687] 15 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1451.879 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2018 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 32 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 17 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 71 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 18 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 1878 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 2 instances
+
+34 Infos, 5 Warnings, 2 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1451.879 ; gain = 1070.613
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1451.879 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 252a37d8d
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.716 . Memory (MB): peak = 1451.879 ; gain = 0.000
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+
+Phase 1.1.1 Generate And Synthesize Debug Cores
+INFO: [Chipscope 16-329] Generating Script for core instance : dbg_hub 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
+INFO: [Chipscope 16-469] Using cached IP synthesis design for IP xilinx.com:ip:xsdbm:3.0, cache-ID = 286a0e50db698b0e.
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1859.676 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1859.676 ; gain = 0.000
+Phase 1.1.1 Generate And Synthesize Debug Cores | Checksum: 307a5e71d
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1859.676 ; gain = 18.996
+Phase 1.1 Core Generation And Design Setup | Checksum: 307a5e71d
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1859.676 ; gain = 18.996
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 307a5e71d
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1859.676 ; gain = 18.996
+Phase 1 Initialization | Checksum: 307a5e71d
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1859.676 ; gain = 18.996
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Timer Update
+Phase 2.1 Timer Update | Checksum: 307a5e71d
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1859.676 ; gain = 18.996
+
+Phase 2.2 Timing Data Collection
+Phase 2.2 Timing Data Collection | Checksum: 307a5e71d
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1859.676 ; gain = 18.996
+Phase 2 Timer Update And Timing Data Collection | Checksum: 307a5e71d
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1859.676 ; gain = 18.996
+
+Phase 3 Retarget
+WARNING: [Opt 31-155] Driverless net i_pcileech_pcie_a7/i_pcie_7x_0/inst/inst/pcie_top_i/pcie_7x_i/cfg_err_atomic_egress_blocked is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: i_pcileech_pcie_a7/i_pcie_7x_0/inst/inst/pcie_top_i/pcie_7x_i/pcie_block_i_i_1
+WARNING: [Opt 31-155] Driverless net i_pcileech_pcie_a7/i_pcie_7x_0/inst/inst/pcie_top_i/pcie_7x_i/cfg_err_malformed is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: i_pcileech_pcie_a7/i_pcie_7x_0/inst/inst/pcie_top_i/pcie_7x_i/pcie_block_i_i_10
+WARNING: [Opt 31-155] Driverless net i_pcileech_pcie_a7/i_pcie_7x_0/inst/inst/pcie_top_i/pcie_7x_i/cfg_err_mc_blocked is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: i_pcileech_pcie_a7/i_pcie_7x_0/inst/inst/pcie_top_i/pcie_7x_i/pcie_block_i_i_11
+WARNING: [Opt 31-155] Driverless net i_pcileech_pcie_a7/i_pcie_7x_0/inst/inst/pcie_top_i/pcie_7x_i/cfg_err_norecovery is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: i_pcileech_pcie_a7/i_pcie_7x_0/inst/inst/pcie_top_i/pcie_7x_i/pcie_block_i_i_12
+WARNING: [Opt 31-155] Driverless net i_pcileech_pcie_a7/i_pcie_7x_0/inst/inst/pcie_top_i/pcie_7x_i/cfg_err_poisoned is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: i_pcileech_pcie_a7/i_pcie_7x_0/inst/inst/pcie_top_i/pcie_7x_i/pcie_block_i_i_13
+WARNING: [Opt 31-155] Driverless net i_pcileech_pcie_a7/i_pcie_7x_0/inst/inst/pcie_top_i/pcie_7x_i/cfg_err_posted is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: i_pcileech_pcie_a7/i_pcie_7x_0/inst/inst/pcie_top_i/pcie_7x_i/pcie_block_i_i_14
+WARNING: [Opt 31-155] Driverless net i_pcileech_pcie_a7/i_pcie_7x_0/inst/inst/pcie_top_i/pcie_7x_i/cfg_err_ur is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: i_pcileech_pcie_a7/i_pcie_7x_0/inst/inst/pcie_top_i/pcie_7x_i/pcie_block_i_i_15
+WARNING: [Opt 31-155] Driverless net i_pcileech_pcie_a7/i_pcie_7x_0/inst/inst/pcie_top_i/pcie_7x_i/cfg_err_cor is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: i_pcileech_pcie_a7/i_pcie_7x_0/inst/inst/pcie_top_i/pcie_7x_i/pcie_block_i_i_2
+WARNING: [Opt 31-155] Driverless net i_pcileech_pcie_a7/i_pcie_7x_0/inst/inst/pcie_top_i/pcie_7x_i/cfg_err_cpl_abort is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: i_pcileech_pcie_a7/i_pcie_7x_0/inst/inst/pcie_top_i/pcie_7x_i/pcie_block_i_i_3
+WARNING: [Opt 31-155] Driverless net i_pcileech_pcie_a7/i_pcie_7x_0/inst/inst/pcie_top_i/pcie_7x_i/cfg_err_cpl_timeout is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: i_pcileech_pcie_a7/i_pcie_7x_0/inst/inst/pcie_top_i/pcie_7x_i/pcie_block_i_i_4
+WARNING: [Opt 31-155] Driverless net i_pcileech_pcie_a7/i_pcie_7x_0/inst/inst/pcie_top_i/pcie_7x_i/cfg_err_cpl_unexpect is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: i_pcileech_pcie_a7/i_pcie_7x_0/inst/inst/pcie_top_i/pcie_7x_i/pcie_block_i_i_5
+WARNING: [Opt 31-155] Driverless net i_pcileech_pcie_a7/i_pcie_7x_0/inst/inst/pcie_top_i/pcie_7x_i/cfg_err_ecrc is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: i_pcileech_pcie_a7/i_pcie_7x_0/inst/inst/pcie_top_i/pcie_7x_i/pcie_block_i_i_6
+WARNING: [Opt 31-155] Driverless net i_pcileech_pcie_a7/i_pcie_7x_0/inst/inst/pcie_top_i/pcie_7x_i/cfg_err_internal_cor is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: i_pcileech_pcie_a7/i_pcie_7x_0/inst/inst/pcie_top_i/pcie_7x_i/pcie_block_i_i_7
+WARNING: [Opt 31-155] Driverless net i_pcileech_pcie_a7/i_pcie_7x_0/inst/inst/pcie_top_i/pcie_7x_i/cfg_err_internal_uncor is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: i_pcileech_pcie_a7/i_pcie_7x_0/inst/inst/pcie_top_i/pcie_7x_i/pcie_block_i_i_8
+WARNING: [Opt 31-155] Driverless net i_pcileech_pcie_a7/i_pcie_7x_0/inst/inst/pcie_top_i/pcie_7x_i/cfg_err_locked is driving LUT input pin I0 which is used by the LUT equation. If the LUT is not removed or a driver added, this warning will become an error. LUT cell name: i_pcileech_pcie_a7/i_pcie_7x_0/inst/inst/pcie_top_i/pcie_7x_i/pcie_block_i_i_9
+INFO: [Opt 31-1851] Number of loadless carry chains removed were: 0
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-1566] Pulled 4 inverters resulting in an inversion of 14 pins
+INFO: [Opt 31-138] Pushed 7 inverter(s) to 48 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 24b1a36f1
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 1859.676 ; gain = 18.996
+Retarget | Checksum: 24b1a36f1
+INFO: [Opt 31-389] Phase Retarget created 70 cells and removed 183 cells
+INFO: [Opt 31-1021] In phase Retarget, 152 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: 2373d208a
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1859.676 ; gain = 18.996
+Constant propagation | Checksum: 2373d208a
+INFO: [Opt 31-389] Phase Constant propagation created 17 cells and removed 113 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 150 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 Sweep
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1859.676 ; gain = 0.000
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1859.676 ; gain = 0.000
+Phase 5 Sweep | Checksum: 201750d79
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 1859.676 ; gain = 18.996
+Sweep | Checksum: 201750d79
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 1199 cells
+INFO: [Opt 31-1021] In phase Sweep, 1468 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 6 BUFG optimization
+Phase 6 BUFG optimization | Checksum: 27e5d6a22
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1859.676 ; gain = 18.996
+BUFG optimization | Checksum: 27e5d6a22
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 27e5d6a22
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1859.676 ; gain = 18.996
+Shift Register Optimization | Checksum: 27e5d6a22
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 271e938e5
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1859.676 ; gain = 18.996
+Post Processing Netlist | Checksum: 271e938e5
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 182 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 2bac1203b
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1859.676 ; gain = 18.996
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+ERROR: [Opt 31-67] Problem: A LUT1 cell in the design is missing a connection on input pin I0, which is used by the LUT equation. This pin has either been left unconnected in the design or the connection was removed due to the trimming of unused logic. The LUT cell name is: i_pcileech_pcie_a7/i_pcie_7x_0/inst/inst/pcie_top_i/pcie_7x_i/pcie_block_i_i_1.
+Resolution: Please review the preceding OPT INFO messages that detail what has been trimmed in the design to determine if the removal of unused logic is causing this error. If opt_design is being specified directly, it will need to be rerun with opt_design -verbose to generate detailed INFO messages about trimming.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1859.676 ; gain = 0.000
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 2bac1203b
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1859.676 ; gain = 18.996
+Phase 9 Finalization | Checksum: 2bac1203b
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1859.676 ; gain = 18.996
+INFO: [Common 17-83] Releasing license: Implementation
+66 Infos, 20 Warnings, 2 Critical Warnings and 2 Errors encountered.
+opt_design failed
+ERROR: [Opt 31-67] Problem: A LUT1 cell in the design is missing a connection on input pin I0, which is used by the LUT equation. This pin has either been left unconnected in the design or the connection was removed due to the trimming of unused logic. The LUT cell name is: i_pcileech_pcie_a7/i_pcie_7x_0/inst/inst/pcie_top_i/pcie_7x_i/pcie_block_i_i_1.
+Resolution: Please review the preceding OPT INFO messages that detail what has been trimmed in the design to determine if the removal of unused logic is causing this error. If opt_design is being specified directly, it will need to be rerun with opt_design -verbose to generate detailed INFO messages about trimming.
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  9 20:34:45 2024...
